@@ -1,7 +1,7 @@
 {
     "name": "victoravelar/geld",
-    "type": "library",
     "description": "A Laravel package to deal with currency displaying and exchange.",
+    "type": "library",
     "keywords": [
         "geld",
         "money",
@@ -19,6 +19,7 @@
     ],
     "require": {
         "php": "~7.2",
+        "ext-json": "*",
         "victoravelar/fixer-exchange": "^1.0"
     },
     "require-dev": {
