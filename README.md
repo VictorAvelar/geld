@@ -1,6 +1,6 @@
-# Exoskeleton
+# Geld [WIP]
 
-**A simple and up to date PHP package foundation (Inspired heavily by league/skeleton)**
+**A Laravel package to deal with currency displaying and exchange.**
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Software License][ico-license]](LICENSE.md)
@@ -15,16 +15,12 @@
 Via Composer
 
 ``` bash
-$ composer require victoravelar/exoskeleton
+$ composer require victoravelar/geld
 ```
 
 ## Usage
 
-Run the installation process.
-``` php
-chmod +x scripts/install.sh
-./scripts/install.sh
-```
+@TODO
 
 ## Change log
 
@@ -53,17 +49,17 @@ If you discover any security related issues, please email deltatuts@gmail.com in
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/victoravelar/exoskeleton.svg?style=flat-square
+[ico-version]: https://img.shields.io/packagist/v/victoravelar/geld.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/victoravelar/exoskeleton/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/victoravelar/exoskeleton.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/victoravelar/exoskeleton.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/victoravelar/exoskeleton.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/victoravelar/geld/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/victoravelar/geld.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/victoravelar/geld.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/victoravelar/geld.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/victoravelar/exoskeleton
-[link-travis]: https://travis-ci.org/victoravelar/exoskeleton
-[link-scrutinizer]: https://scrutinizer-ci.com/g/victoravelar/exoskeleton/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/victoravelar/exoskeleton
-[link-downloads]: https://packagist.org/packages/victoravelar/exoskeleton
+[link-packagist]: https://packagist.org/packages/victoravelar/geld
+[link-travis]: https://travis-ci.org/victoravelar/geld
+[link-scrutinizer]: https://scrutinizer-ci.com/g/victoravelar/geld/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/victoravelar/geld
+[link-downloads]: https://packagist.org/packages/victoravelar/geld
 [link-author]: https://github.com/VictorAvelar
 [link-contributors]: ../../contributors

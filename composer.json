@@ -1,13 +1,13 @@
 {
-    "name": "victoravelar/exoskeleton",
+    "name": "victoravelar/geld",
     "type": "library",
-    "description": "A simple and up to date PHP package foundation (Inspired heavily by league/skeleton)",
+    "description": "A Laravel package to deal with currency displaying and exchange.",
     "keywords": [
-        "victoravelar",
-        "exoskeleton",
-        "php"
+        "geld",
+        "money",
+        "laravel"
     ],
-    "homepage": "https://github.com/victoravelar/exoskeleton",
+    "homepage": "https://github.com/victoravelar/geld",
     "license": "MIT",
     "authors": [
         {
@@ -18,11 +18,14 @@
         }
     ],
     "require": {
-        "php" : "~7.1"
+        "php": "~7.2",
+        "victoravelar/fixer-exchange": "^1.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.15",
+        "laravel/framework": "^6.0",
         "nunomaduro/phpinsights": "^1.6",
+        "orchestra/testbench": "^4.0",
         "phpmd/phpmd": "^2.6",
         "phpstan/phpstan": "^0.11.1",
         "phpunit/phpunit": ">=7.0",
@@ -30,12 +33,12 @@
     },
     "autoload": {
         "psr-4": {
-            "VictorAvelar\\Exoskeleton\\": "src"
+            "VictorAvelar\\Geld\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VictorAvelar\\Exoskeleton\\Tests\\": "tests"
+            "VictorAvelar\\Geld\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -48,6 +51,14 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "VictorAvelar\\Geld\\GeldServiceProvider"
+            ],
+            "aliases": {
+                "Geld": "VictorAvelar\\Geld\\Geld"
+            }
         }
     },
     "config": {
