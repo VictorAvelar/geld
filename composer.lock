@@ -2726,22 +2726,22 @@
         },
         {
             "name": "orchestra/testbench",
-            "version": "v4.1.0",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "1ff8b79821e6b7624d056fd365e54415241d0146"
+                "reference": "cbfb79054bb7cf1fc713acc03504aac92aafe6a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/1ff8b79821e6b7624d056fd365e54415241d0146",
-                "reference": "1ff8b79821e6b7624d056fd365e54415241d0146",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/cbfb79054bb7cf1fc713acc03504aac92aafe6a1",
+                "reference": "cbfb79054bb7cf1fc713acc03504aac92aafe6a1",
                 "shasum": ""
             },
             "require": {
-                "laravel/framework": "^6.1",
+                "laravel/framework": "^6.2",
                 "mockery/mockery": "^1.2.3",
-                "orchestra/testbench-core": "^4.1",
+                "orchestra/testbench-core": "^4.2",
                 "php": ">=7.2",
                 "phpunit/phpunit": "^8.3"
             },
@@ -2772,20 +2772,20 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2019-10-06T13:23:45+00:00"
+            "time": "2019-10-11T01:58:15+00:00"
         },
         {
             "name": "orchestra/testbench-core",
-            "version": "v4.1.0",
+            "version": "v4.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "ce1b8b329967c022a43a5efae4fdd9080eca3a6b"
+                "reference": "4f098fe9bc64c23ea0b7c4ae12c0e26cb270e8e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/ce1b8b329967c022a43a5efae4fdd9080eca3a6b",
-                "reference": "ce1b8b329967c022a43a5efae4fdd9080eca3a6b",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/4f098fe9bc64c23ea0b7c4ae12c0e26cb270e8e7",
+                "reference": "4f098fe9bc64c23ea0b7c4ae12c0e26cb270e8e7",
                 "shasum": ""
             },
             "require": {
@@ -2793,13 +2793,13 @@
                 "php": ">=7.2"
             },
             "require-dev": {
-                "laravel/framework": "^6.1",
+                "laravel/framework": "^6.2",
                 "laravel/laravel": "dev-master",
                 "mockery/mockery": "^1.2.3",
                 "phpunit/phpunit": "^8.3"
             },
             "suggest": {
-                "laravel/framework": "Required for testing (^6.1).",
+                "laravel/framework": "Required for testing (^6.2).",
                 "mockery/mockery": "Allow using Mockery for testing (^1.2.3).",
                 "orchestra/testbench-browser-kit": "Allow using legacy Laravel BrowserKit for testing (^4.0).",
                 "orchestra/testbench-dusk": "Allow using Laravel Dusk for testing (^4.0).",
@@ -2837,7 +2837,7 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2019-10-06T13:17:34+00:00"
+            "time": "2019-10-11T01:50:36+00:00"
         },
         {
             "name": "paragonie/random_compat",
