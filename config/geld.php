@@ -9,33 +9,26 @@ return [
     'access_key' => env("FIXER_API_KEY", ""),
 
     /*
-     * The scheduler will automatically update the exchange rates by calling the api endpoint and it will perform the
-     * required actions to keep everything up to date.
-     */
-    'auto_schedule' => true,
-
-    /*
      * Base is the main currency of your website, it defaults to EUR but you can set it up to any currency available
-     * on fixer.io
+     * on fixer.io if you have a PREMIUM account.
      */
     'base' => 'EUR',
 
     /*
-     * Supported is an array of the currencies supported by your laravel site if an operation with a non supported
-     * currency is intended the the package will throw an exception.
+     * Supported is an array of the currencies supported by your laravel site, only supported currencies are
+     * persisted to your database.
      */
     'supported' => ['USD'],
 
     /*
-     * Storage mode tells the package how to remember currencies when an update happens, it can be set to latest or
-     * history.
-     * Latest means that the package will override the currency value on every update.
-     * History means that an extra table called currency history will be created and the package will save the old
-     * records there.
+     * History mode tells the package to remember currencies when an update happens.
      *
-     * It defaults to latest.
+     * When set to false the package will override the currency value on every update.
+     * When set to true the package will save the old records in the currency_history table.
+     *
+     * It defaults to true.
      */
-    'storage_mode' => 'latest',
+    'history_mode' => true,
 
     /*
      * Retention will only be considered when the storage mode is set to history, it tells the package for how long

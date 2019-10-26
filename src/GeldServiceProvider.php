@@ -5,6 +5,8 @@ namespace VictorAvelar\Geld;
 use Illuminate\Support\ServiceProvider;
 use VictorAvelar\Fixer\FixerHttpClient;
 use VictorAvelar\Fixer\Resources\LatestRatesResource;
+use VictorAvelar\Geld\Commands\CheckRetentionCommand;
+use VictorAvelar\Geld\Commands\DataIncineratorCommand;
 use VictorAvelar\Geld\Commands\UpdateExchangeRatesCommand;
 
 /**
@@ -31,6 +33,8 @@ class GeldServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 UpdateExchangeRatesCommand::class,
+                CheckRetentionCommand::class,
+                DataIncineratorCommand::class,
             ]);
         }
     }

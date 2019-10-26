@@ -72,20 +72,22 @@ class UpdateExchangeRatesCommand extends Command
         $cu = now();
         $data = [];
         foreach ($rates as $code => $rate) {
-            $record = [
-                'code' => $code,
-                'rate' => $rate,
-                'created_at' => $cu,
-                'updated_at' => $cu
-            ];
+            if (in_array($code, config('geld.supported'))) {
+                $record = [
+                    'code' => $code,
+                    'rate' => $rate,
+                    'created_at' => $cu,
+                    'updated_at' => $cu
+                ];
 
-            Db::table('currencies')
-                ->updateOrInsert(
-                    ['code' => $code],
-                    $record
-                );
+                Db::table('currencies')
+                    ->updateOrInsert(
+                        ['code' => $code],
+                        $record
+                    );
 
-            $data[] = $record;
+                $data[] = $record;
+            }
         }
 
         if (!$this->option('no-history')) {
