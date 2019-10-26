@@ -7,7 +7,7 @@ use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use VictorAvelar\Fixer\Resources\LatestRatesResource;
-use VictorAvelar\Geld\Models\Currency;
+use VictorAvelar\Geld\Events\RatesUpdated;
 
 class UpdateExchangeRatesCommand extends Command
 {
@@ -48,6 +48,7 @@ class UpdateExchangeRatesCommand extends Command
             $this->printRates($info);
         } else {
             $this->saveExchangeRates($info['rates']);
+            event(new RatesUpdated());
         }
         Log::info('Currency import completed');
     }
@@ -90,7 +91,7 @@ class UpdateExchangeRatesCommand extends Command
             }
         }
 
-        if (!$this->option('no-history')) {
+        if (!$this->option('no-history') or !config('geld.history_mode')) {
             Db::table('currency_history')->insert($data);
         }
     }
