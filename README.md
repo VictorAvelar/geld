@@ -1,4 +1,4 @@
-# Geld [WIP]
+# Geld
 
 **Bring currency exchange rates to your Laravel application**
 
@@ -15,7 +15,7 @@
 Via Composer
 
 ``` bash
-$ composer require victoravelar/geld
+composer require victoravelar/geld
 ```
 
 ## Getting started
@@ -25,7 +25,7 @@ configurable and it solely depends on your needs.
 
 ## Usage
 
-Set the your Fixer.io API key as an environment variable for your project using `FIXER_API_KEY` as name.
+Set your Fixer.io API key as an environment variable for your project using `FIXER_API_KEY` as name.
 
 #### Configuration
 
