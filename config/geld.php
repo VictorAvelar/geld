@@ -17,6 +17,8 @@ return [
     /*
      * Supported is an array of the currencies supported by your laravel site, only supported currencies are
      * persisted to your database.
+     *
+     * An empty array will pull all the available rates.
      */
     'supported' => ['USD'],
 
