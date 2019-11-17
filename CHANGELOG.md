@@ -9,12 +9,14 @@ Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) princip
 ### Added
 - Test case for multi saving all currencies
 - Test case for `geld:retention` command
+- Test case for `geld:incinerate` command
 
 ### Deprecated
 - Nothing
 
 ### Fixed
 - Bug found during the execution of `geld:retention`
+- Using wrong name for configuration variable
 
 ### Removed
 - Imports not used in classes
