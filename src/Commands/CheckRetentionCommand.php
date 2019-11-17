@@ -6,7 +6,6 @@ use DateTime;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Log;
-use VictorAvelar\Geld\Events\HistoryExpired;
 use VictorAvelar\Geld\Models\CurrencyHistory;
 
 class CheckRetentionCommand extends Command
@@ -29,8 +28,8 @@ class CheckRetentionCommand extends Command
     public function handle()
     {
         if (config('geld.history_mode')) {
-            $edge = new DateTime('@'.strtotime('- '.config('geld.retention_period')));
-
+            $retention = '@'.strtotime('-'.config('geld.retention'));
+            $edge = new DateTime($retention);
             CurrencyHistory::where('created_at', '<', $edge)
                 ->delete();
 

@@ -20,4 +20,9 @@ class Currency extends Model
         'rate',
         'imported_at',
     ];
+
+    protected $casts = [
+        'imported_at' => 'datetime',
+        'rate' => 'double',
+    ];
 }

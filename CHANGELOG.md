@@ -4,19 +4,22 @@ All notable changes to `geld` will be documented in this file.
 
 Updates should follow the [Keep a CHANGELOG](http://keepachangelog.com/) principles.
 
-## NEXT - YYYY-MM-DD
+## master
 
 ### Added
-- Nothing
+- Test case for multi saving all currencies
+- Test case for `geld:retention` command
 
 ### Deprecated
 - Nothing
 
 ### Fixed
-- Nothing
+- Bug found during the execution of `geld:retention`
 
 ### Removed
-- Nothing
+- Imports not used in classes
 
 ### Security
-- Nothing
+- Updated symfony httpkernel to 4.3.8
+
+## 0.1.0 - Initial release

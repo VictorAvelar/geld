@@ -21,6 +21,10 @@ class CurrencyHistory extends Model
         'code',
         'rate',
         'imported_at',
-        'valid_until',
+    ];
+
+    protected $casts = [
+        'imported_at' => 'datetime',
+        'rate' => 'double',
     ];
 }
