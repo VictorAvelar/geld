@@ -28,12 +28,11 @@ class DataIncineratorCommand extends Command
      */
     public function handle()
     {
-        if (config('geld.incinerator')) {
-            $edge = new DateTime('@'. strtotime('- '.config('geld.incinerate_after')));
-
+        if (config('geld.incinerate')) {
+            $incinerate = '@'.strtotime('-'.config('geld.incinerate_after'));
+            $edge = new DateTime($incinerate);
             CurrencyHistory::where('created_at', '<', $edge)
                 ->forceDelete();
-
             Log::info("Data incinerated successfully");
         }
     }
