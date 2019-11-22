@@ -1145,16 +1145,16 @@
         },
         {
             "name": "fzaninotto/faker",
-            "version": "v1.8.0",
+            "version": "v1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de"
+                "reference": "27a216cbe72327b2d6369fab721a5843be71e57d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/f72816b43e74063c8b10357394b6bba8cb1c10de",
-                "reference": "f72816b43e74063c8b10357394b6bba8cb1c10de",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/27a216cbe72327b2d6369fab721a5843be71e57d",
+                "reference": "27a216cbe72327b2d6369fab721a5843be71e57d",
                 "shasum": ""
             },
             "require": {
@@ -1163,13 +1163,11 @@
             "require-dev": {
                 "ext-intl": "*",
                 "phpunit/phpunit": "^4.8.35 || ^5.7",
-                "squizlabs/php_codesniffer": "^1.5"
+                "squizlabs/php_codesniffer": "^2.9.2"
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "1.8-dev"
-                }
+                "branch-alias": []
             },
             "autoload": {
                 "psr-4": {
@@ -1191,7 +1189,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2018-07-12T10:23:15+00:00"
+            "time": "2019-11-14T13:13:06+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
@@ -2733,22 +2731,22 @@
         },
         {
             "name": "orchestra/testbench",
-            "version": "v4.3.0",
+            "version": "v4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "5174b6f7855855fda78b4a2f7d030d56f0ae5a1e"
+                "reference": "ec68ebb19005f7690b94b565fc7af878d9db110d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/5174b6f7855855fda78b4a2f7d030d56f0ae5a1e",
-                "reference": "5174b6f7855855fda78b4a2f7d030d56f0ae5a1e",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/ec68ebb19005f7690b94b565fc7af878d9db110d",
+                "reference": "ec68ebb19005f7690b94b565fc7af878d9db110d",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "^6.4",
                 "mockery/mockery": "^1.2.3",
-                "orchestra/testbench-core": "^4.3",
+                "orchestra/testbench-core": "^4.4",
                 "php": ">=7.2",
                 "phpunit/phpunit": "^8.3"
             },
@@ -2779,20 +2777,20 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2019-10-23T22:51:50+00:00"
+            "time": "2019-11-22T01:56:09+00:00"
         },
         {
             "name": "orchestra/testbench-core",
-            "version": "v4.3.0",
+            "version": "v4.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "dbc623c46cb839c64f5425daee795ac14214f9bc"
+                "reference": "9a0d9a1818d0c65b0087807be5af107b495b2eb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/dbc623c46cb839c64f5425daee795ac14214f9bc",
-                "reference": "dbc623c46cb839c64f5425daee795ac14214f9bc",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/9a0d9a1818d0c65b0087807be5af107b495b2eb5",
+                "reference": "9a0d9a1818d0c65b0087807be5af107b495b2eb5",
                 "shasum": ""
             },
             "require": {
@@ -2844,7 +2842,7 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2019-10-23T22:30:08+00:00"
+            "time": "2019-11-22T01:45:35+00:00"
         },
         {
             "name": "paragonie/random_compat",
