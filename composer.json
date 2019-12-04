@@ -28,7 +28,7 @@
         "nunomaduro/phpinsights": "^1.6",
         "orchestra/testbench": "^4.3",
         "phpmd/phpmd": "^2.6",
-        "phpstan/phpstan": "^0.11.1",
+        "phpstan/phpstan": "^0.11.1 || ^0.12.0",
         "phpunit/phpunit": ">=7.0",
         "squizlabs/php_codesniffer": "^3.0"
     },
