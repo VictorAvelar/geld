@@ -2225,22 +2225,22 @@
         },
         {
             "name": "orchestra/testbench",
-            "version": "v4.5.0",
+            "version": "v4.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench.git",
-                "reference": "eb373f3e8d3b8ebc464f878db41ecc281a8c7547"
+                "reference": "0b537bf4d34a8da92759b79fcbe371e10b0135f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench/zipball/eb373f3e8d3b8ebc464f878db41ecc281a8c7547",
-                "reference": "eb373f3e8d3b8ebc464f878db41ecc281a8c7547",
+                "url": "https://api.github.com/repos/orchestral/testbench/zipball/0b537bf4d34a8da92759b79fcbe371e10b0135f0",
+                "reference": "0b537bf4d34a8da92759b79fcbe371e10b0135f0",
                 "shasum": ""
             },
             "require": {
                 "laravel/framework": "^6.9",
                 "mockery/mockery": "~1.2.3 || ^1.3.1",
-                "orchestra/testbench-core": "^4.5",
+                "orchestra/testbench-core": "^4.6",
                 "php": ">=7.2",
                 "phpunit/phpunit": "^8.3 || ^9.0"
             },
@@ -2271,24 +2271,24 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2020-01-07T22:50:40+00:00"
+            "time": "2020-01-29T23:03:49+00:00"
         },
         {
             "name": "orchestra/testbench-core",
-            "version": "v4.5.0",
+            "version": "v4.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/orchestral/testbench-core.git",
-                "reference": "b92e31c5b101fc87bc5c3137610151dcae82f0e3"
+                "reference": "6e6f1c330d37563d2ecca125d6b672e752ab88b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/b92e31c5b101fc87bc5c3137610151dcae82f0e3",
-                "reference": "b92e31c5b101fc87bc5c3137610151dcae82f0e3",
+                "url": "https://api.github.com/repos/orchestral/testbench-core/zipball/6e6f1c330d37563d2ecca125d6b672e752ab88b5",
+                "reference": "6e6f1c330d37563d2ecca125d6b672e752ab88b5",
                 "shasum": ""
             },
             "require": {
-                "fzaninotto/faker": "^1.4",
+                "fzaninotto/faker": "^1.9.1",
                 "php": ">=7.2"
             },
             "require-dev": {
@@ -2336,7 +2336,7 @@
                 "orchestral",
                 "testing"
             ],
-            "time": "2019-12-31T01:37:59+00:00"
+            "time": "2020-01-29T22:59:50+00:00"
         },
         {
             "name": "paragonie/random_compat",
